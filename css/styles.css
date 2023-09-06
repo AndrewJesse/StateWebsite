@@ -1,0 +1,44 @@
+/* Style for the section */
+section {
+    display: flex;  /* Make it a flex container */
+    justify-content: space-between;  /* Space out the children */
+}
+
+/* Style for the main content (you might need to wrap it in a div or another container) */
+section > div.content {
+    flex: 3;  /* Take 3 parts of the available space */
+}
+
+/* Style for the aside */
+aside {
+    flex: 1;  /* Take 1 part of the available space */
+    padding-left: 20px;  /* Add some space between the content and the aside for better readability */
+}
+aside {
+    width: 30%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+    background-color: lightgray;
+  }
+
+
+/*stying for nav bar*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;  /* You can adjust this value based on your preference */
+    margin: 0 auto;    /* This will horizontally center the nav on the page */
+    padding: 0 10px;   /* A little padding on the sides to ensure the links don't touch the edges */
+}
+
+nav a {
+    text-decoration: none;  /* Remove the default underline */
+    color: #333;            /* Set a color; change as needed */
+}
+
+/* Optional: Add some hover effect for better user feedback */
+nav a:hover {
+    text-decoration: underline;
+}
