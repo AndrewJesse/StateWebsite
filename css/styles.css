@@ -30,15 +30,23 @@ nav {
     justify-content: space-between;
     max-width: 800px;  /* You can adjust this value based on your preference */
     margin: 0 auto;    /* This will horizontally center the nav on the page */
-    padding: 0 10px;   /* A little padding on the sides to ensure the links don't touch the edges */
+    padding: 30px 10px;   /* A little padding on the sides to ensure the links don't touch the edges */
 }
 
 nav a {
+    display: inline-block;
+    text-align: center; 
+    width: 100px;
     text-decoration: none;  /* Remove the default underline */
-    color: #333;            /* Set a color; change as needed */
+    color: #333; 
+    border: 2px solid #555555;   
+    border-radius: 12px;        
 }
 
-/* Optional: Add some hover effect for better user feedback */
 nav a:hover {
-    text-decoration: underline;
+    font-weight: bold;            /* Makes the text bold */
+    transform: scale(1.30);             /* Makes the text bigger */
+    background-color: #e7e7e7;
+
 }
+
