@@ -1,18 +1,18 @@
 /* General styling */
 body {
-    font-family: Arial, sans-serif;  
+    font-family: Arial, sans-serif;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: flex-start;
-    min-height: 100vh; 
+    min-height: 100vh;
 }
 
 .main-container {
     max-width: 800px;
-    width: 100%; 
-    background-color: rgba(173, 216, 230, 0.5); 
-    padding: 20px; 
-    box-sizing: border-box;  
+    width: 100%;
+    background-color: rgba(173, 216, 230, 0.5);
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 header {
@@ -82,8 +82,8 @@ nav a:hover {
 }
 
 #title-text {
-    color: #000080; 
-    font-weight: 900; 
+    color: #000080;
+    font-weight: 900;
     text-decoration: underline;
 }
 
@@ -109,7 +109,10 @@ aside {
     height: 100px;
 }
 
-input[type=text], input[type=email], textarea, select {
+input[type=text],
+input[type=email],
+textarea,
+select {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -133,4 +136,11 @@ input[type=submit] {
 
 input[type=submit]:hover {
     background-color: #45a049;
+}
+
+.location-image {
+    display: block;
+    margin: 0 auto;
+    width: 700px;
+    padding-top: 20px;
 }
