@@ -1,13 +1,41 @@
 /*header styling*/
 header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px 10px;
+    position: relative;
+}
+
+header::before {
+    content: "The State of Oregon";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    font-weight: bold;
+}
+
+.header-image {
+    max-width: 75px;
+    height: auto;
 }
 
 
+
+
+
+/**/
+h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
 
 
 
