@@ -1,52 +1,59 @@
-/* Style for the section */
-section {
-    display: flex;  /* Make it a flex container */
-    justify-content: space-between;  /* Space out the children */
+/*header styling*/
+header {
+    display: flex;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 10px;
 }
 
-/* Style for the main content (you might need to wrap it in a div or another container) */
-section > div.content {
-    flex: 3;  /* Take 3 parts of the available space */
+
+
+
+
+/*nav bar stying*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 10px;
 }
 
-/* Style for the aside */
-aside {
-    flex: 1;  /* Take 1 part of the available space */
-    padding-left: 20px;  /* Add some space between the content and the aside for better readability */
+nav a {
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #555555;
+    border-radius: 12px;
 }
+
+nav a:hover {
+    font-weight: bold;
+    transform: scale(1.30);
+    background-color: #e7e7e7;
+}
+
+
+
+
+
+/*section styling*/
+section.content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 aside {
+    flex: 2;
     width: 30%;
     padding-left: 15px;
     margin-left: 15px;
     float: right;
     font-style: italic;
     background-color: lightgray;
-  }
-
-
-/*stying for nav bar*/
-nav {
-    display: flex;
-    justify-content: space-between;
-    max-width: 800px;  /* You can adjust this value based on your preference */
-    margin: 0 auto;    /* This will horizontally center the nav on the page */
-    padding: 30px 10px;   /* A little padding on the sides to ensure the links don't touch the edges */
 }
-
-nav a {
-    display: inline-block;
-    text-align: center; 
-    width: 100px;
-    text-decoration: none;  /* Remove the default underline */
-    color: #333; 
-    border: 2px solid #555555;   
-    border-radius: 12px;        
-}
-
-nav a:hover {
-    font-weight: bold;            /* Makes the text bold */
-    transform: scale(1.30);             /* Makes the text bigger */
-    background-color: #e7e7e7;
-
-}
-
