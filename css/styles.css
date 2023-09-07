@@ -132,3 +132,14 @@ body {
 
 
 
+input[type="submit"] {
+    align-self: center;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+}
+
+
