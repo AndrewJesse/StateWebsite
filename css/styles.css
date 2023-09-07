@@ -1,4 +1,9 @@
-/*header styling*/
+/* General styling */
+body {
+    font-family: Arial, sans-serif;  /* font-family declaration */
+}
+
+/* Header styling */
 header {
     display: flex;
     justify-content: space-between;
@@ -23,9 +28,11 @@ header::before {
     height: auto;
 }
 
-
-
-
+/* New ID selector for specific element styling */
+#special-text {
+    color: blue;
+    font-weight: bold;
+}
 
 /**/
 h3 {
@@ -37,15 +44,17 @@ h3 {
     padding-bottom: 10px;
 }
 
-
-
-/*nav bar stying*/
+/* Nav bar styling */
 nav {
     display: flex;
     justify-content: space-between;
     max-width: 800px;
     margin: 0 auto;
     padding: 30px 10px;
+}
+
+nav a.button { /* Specific to class .button */
+    background-color: #e7e7e7;
 }
 
 nav a {
@@ -65,10 +74,16 @@ nav a:hover {
 }
 
 
+#title-text {
+    color: #000080; 
+    font-weight: 900; 
+    text-decoration: underline;
+}
 
 
 
-/*section styling*/
+
+/* Section styling */
 section.content {
     display: flex;
     justify-content: space-between;
@@ -77,11 +92,43 @@ section.content {
 }
 
 aside {
-    flex: 2;
-    width: 30%;
-    padding-left: 15px;
-    margin-left: 15px;
-    float: right;
+    width: 65%;
+    padding: 4px;
+    font-size: 0.9em; /* This reduces the font size to 90% of its current size */
     font-style: italic;
     background-color: lightgray;
 }
+
+
+
+
+.center {
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    height: 100px; /* Adjust height as needed */
+}
+
+
+
+/*Background*/
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;  /* This centers the child elements horizontally */
+    align-items: top;  /* This is not a valid value for align-items */
+    min-height: 100vh; 
+}
+
+.main-container {
+    max-width: 800px;
+    width: 100%; 
+    background-color: rgba(173, 216, 230, 0.5); /* This is a transparent light blue color */
+    padding: 20px; 
+    box-sizing: border-box;  /* This ensures padding is included in width */
+}
+
+
+
+
+
