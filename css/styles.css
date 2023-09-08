@@ -141,11 +141,15 @@ input[type=submit]:hover {
 .location-image {
     display: block;
     margin: 0 auto;
-    width: 700px;
-    height: 250px;
+    max-width: 100%;
+    /* This will ensure the image doesn't exceed the container's width */
+    height: auto;
+    /* This will maintain the image's aspect ratio */
     padding-top: 20px;
     object-fit: cover;
+    /* This might not be necessary after these changes, but it won't hurt to keep it */
 }
+
 
 table {
     border-collapse: collapse;
